@@ -1,9 +1,10 @@
-import { ageCalculator } from './../src/ageCalculator.js';
 
-describe( 'ageCalculator', function() {
+import { CalculateAge } from './../src/ageCalculator.js';
 
-  it('should test whether the Mercury age is correct', function() {
-    var userAge = new ageCalculator();
-    expect(userAge.returnYear()).toEqual();
+describe( 'CalculateAge', function() {
+
+  it('should test whether the age of Mercury is correct', function() {
+    var userAge = new CalculateAge(10);
+    expect(userAge.returnResult()).toEqual((1/.24)*10);
   });
 });
