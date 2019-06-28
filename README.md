@@ -6,11 +6,11 @@
 
 ## Description
 
-_This website will take your age input and return your age in Mercury, Venus, Mars, and Jupiter years. It will also determine the expected years you will live on each planet._
+_This website will take your age and life expectancy input to return your age in Mercury, Venus, Mars, and Jupiter years. It will also determine the expected years you will live on each planet._
 
 ## Specifications
 
-_Earth year = 365 days                  Life expectancy = 80 years old_
+_Earth year = 365 days_
 _Mercury year = 87.6 days_
 _Venus year = 226.3 days_
 _Mars year = 657 days_
@@ -21,9 +21,8 @@ _Jupiter year = 4,328.9 days_
 | User enters in their age and return age in Mercury years | 10 years old | 41.67 Mercury years |
 | User enters in their age and return age in Venus years | 10 years old | 16.13 Venus years |
 | User enters in their age and return age in Mars years | 10 years old | 5.32 Mars years |
-| User enters in their age and return age in Jupiter years | 10 years old | .84 Jupiter years |
-| Calculates life expectancy on Earth based on questions answers. Each questions adds/subtracts 5 years. Based on a 1-5 scale, with 5 being the best. | User inputs answers and gets 3/5. | You are expected to live to 70 years old. |
-| Output years left live. | 10 years old who is expected to live to 70. | 60 years left |
+| User enters in their age and return age in Jupiter years | 10 years old | .84 Jupiter years |  
+| Finds out the remaining years left by subtracting user age from user input for life expectancy | 10 years old who is expected to live to 80. | 70 years left |
 | Repeat steps for other planets. | ex. Mercury age 41.67 years (10 earth years) | 250 years |
 
 ## Setup/Installation Requirements
