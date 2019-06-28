@@ -19,4 +19,9 @@ describe( 'CalculateAge', function() {
     var userAge = new CalculateAge(10);
     expect(userAge.returnJupiter()).toEqual((1/11.86)*10);
   });
+  
+  it('should calculate how many years left to live on earth', function() {
+    var userInput = new CalculateAge(10, 80);
+    expect(userInput.calculateYears()).toEqual(70);
+  });
 });
