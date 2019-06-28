@@ -5,6 +5,18 @@ describe( 'CalculateAge', function() {
 
   it('should test whether the age of Mercury is correct', function() {
     var userAge = new CalculateAge(10);
-    expect(userAge.returnResult()).toEqual((1/.24)*10);
+    expect(userAge.returnMercury()).toEqual((1/.24)*10);
+  });
+  it('should test whether the age of Venus is correct', function() {
+    var userAge = new CalculateAge(10);
+    expect(userAge.returnVenus()).toEqual((1/.62)*10);
+  });
+  it('should test whether the age of Mars is correct', function() {
+    var userAge = new CalculateAge(10);
+    expect(userAge.returnMars()).toEqual((1/1.88)*10);
+  });
+  it('should test whether the age of Jupiter is correct', function() {
+    var userAge = new CalculateAge(10);
+    expect(userAge.returnJupiter()).toEqual((1/11.86)*10);
   });
 });
