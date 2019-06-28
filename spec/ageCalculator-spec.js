@@ -33,4 +33,19 @@ describe( 'CalculateAge', function() {
     var user = new CalculateAge(10, 80);
     expect(user.mercuryExpect()).toEqual(16.8);
   });
+
+  it('should calculate how many Venus years you are expected to have left', function() {
+    var user = new CalculateAge(10, 80);
+    expect(user.venusExpect()).toEqual(43.4);
+  });
+
+  it('should calculate how many Mars years you are expected to have left', function() {
+    var user = new CalculateAge(10, 80);
+    expect(user.marsExpect()).toEqual(131.6);
+  });
+
+  it('should calculate how many Jupiter years you are expected to have left', function() {
+    var user = new CalculateAge(10, 80);
+    expect(user.jupiterExpect()).toEqual(830.2);
+  });
 });

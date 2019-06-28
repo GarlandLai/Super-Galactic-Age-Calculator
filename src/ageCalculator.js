@@ -35,4 +35,22 @@ export class CalculateAge {
     const userAge = new Date(this.age);
     return (userInput/(1/.24)) - (userAge/(1/.24))
   }
+
+  venusExpect () {
+    const userInput = new Date(this.life);
+    const userAge = new Date(this.age);
+    return (userInput/(1/.62)) - (userAge/(1/.62))
+  }
+
+  marsExpect () {
+    const userInput = new Date(this.life);
+    const userAge = new Date(this.age);
+    return (userInput/(1/1.88)) - (userAge/(1/1.88))
+  }
+
+  jupiterExpect () {
+    const userInput = new Date(this.life);
+    const userAge = new Date(this.age);
+    return (userInput/(1/11.86)) - (userAge/(1/11.86))
+  }
 }
