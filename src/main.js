@@ -13,5 +13,11 @@ $(document).ready(function(){
     console.log(result);
     $('.output').append("Mercury years: " + (parseFloat(result.returnMercury().toFixed(1))));
     $('.output').append("Venus years: " + (parseFloat(result.returnVenus().toFixed(1))));
+    $('.output').append("Mars years: " + (parseFloat(result.returnMars().toFixed(1))));
+    $('.output').append("Jupiter years: " + (parseFloat(result.returnJupiter().toFixed(1))));
+    $('.output').append("Mercury years left: " + (parseFloat(result.mercuryExpect().toFixed(1))));
+    $('.output').append("Venus years left: " + (parseFloat(result.venusExpect().toFixed(1))));
+    $('.output').append("Mars years left: " + (parseFloat(result.marsExpect().toFixed(1))));
+    $('.output').append("Jupiter years left: " + (parseFloat(result.jupiterExpect().toFixed(1))));
   });
 });
