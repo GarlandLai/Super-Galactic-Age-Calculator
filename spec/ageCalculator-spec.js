@@ -24,7 +24,7 @@ describe( 'CalculateAge', function() {
     var userInput = new CalculateAge(10, 80);
     expect(userInput.calculateYears()).toEqual(70);
   });
-  it('should calculate how many years you passedyour life expectancy', function() {
+  it('should calculate how many earth years you passed your life expectancy', function() {
     var userInput = new CalculateAge(80, 70);
     expect(userInput.calculateYears()).toEqual(-10);
   });

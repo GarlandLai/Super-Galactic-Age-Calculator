@@ -7,8 +7,9 @@ import './styles.css';
 $(document).ready(function(){
   $('#formOne').submit(function(){
     event.preventDefault();
-    // const earthAge = $('#ageInput').val();
-    // const result = new CalculateAge(earthAge);
-    // $('.output').text(result.returnResult());
+    const earthAge = $('#ageInput').val();
+    const earthLife = $('#lifeInput').val();
+    // const result = new CalculateAge(earthAge, earthLife);
+    // $('.output').append(result.mercuryYears());
   });
 });
