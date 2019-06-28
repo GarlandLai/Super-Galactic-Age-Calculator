@@ -29,4 +29,10 @@ export class CalculateAge {
     const userAge = new Date(this.age);
     return userInput - userAge
   }
+
+  mercuryExpect () {
+    const userInput = new Date(this.life);
+    const userAge = new Date(this.age);
+    return (userInput/(1/.24)) - (userAge/(1/.24))
+  }
 }

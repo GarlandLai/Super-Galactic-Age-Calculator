@@ -28,4 +28,9 @@ describe( 'CalculateAge', function() {
     var userInput = new CalculateAge(80, 70);
     expect(userInput.calculateYears()).toEqual(-10);
   });
+
+  it('should calculate how many Mercury years you are expected to have left', function() {
+    var user = new CalculateAge(10, 80);
+    expect(user.mercuryExpect()).toEqual(16.8);
+  });
 });
