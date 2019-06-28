@@ -8,8 +8,8 @@ $(document).ready(function(){
   $('#formOne').submit(function(){
     event.preventDefault();
     const earthAge = $('#ageInput').val();
+    console.log(earthAge);
     const earthLife = $('#lifeInput').val();
-    // const result = new CalculateAge(earthAge, earthLife);
-    // $('.output').append(result.mercuryYears());
+    const result = new CalculateAge(earthAge, earthLife);
   });
 });
