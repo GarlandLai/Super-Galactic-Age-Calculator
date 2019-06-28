@@ -7,13 +7,11 @@ import './styles.css';
 $(document).ready(function(){
   $('#formOne').submit(function(){
     event.preventDefault();
-    const earthAge = $('#ageInput').val();
-    console.log(earthAge);
-    const earthLife = $('#lifeInput').val();
-    console.log(earthLife);
+    const earthAge = parseInt($('#ageInput').val());
+    const earthLife = parseInt($('#lifeInput').val());
     const result = new CalculateAge(earthAge, earthLife);
     console.log(result);
-    const mercury = returnMercury(earthAge);
-    console.log(mercury);
+    $('.output').append("Mercury years: " + (parseFloat(result.returnMercury().toFixed(1))));
+    $('.output').append("Venus years: " + (parseFloat(result.returnVenus().toFixed(1))));
   });
 });
