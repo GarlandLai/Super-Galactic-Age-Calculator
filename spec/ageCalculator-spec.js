@@ -26,18 +26,18 @@ describe( 'CalculateAge', function() {
   });
   it('should calculate how many Mercury years you are expected to have left', function() {
     const user = new CalculateAge(10, 80);
-    expect(parseFloat(user.mercuryExpect().toFixed(1))).toEqual(16.8);
+    expect(parseFloat(user.mercuryExpect().toFixed(1))).toEqual(291.7);
   });
   it('should calculate how many Venus years you are expected to have left', function() {
     const user = new CalculateAge(10, 80);
-    expect(parseFloat(user.venusExpect().toFixed(1))).toEqual(43.4);
+    expect(parseFloat(user.venusExpect().toFixed(1))).toEqual(112.9);
   });
   it('should calculate how many Mars years you are expected to have left', function() {
     const user = new CalculateAge(10, 80);
-    expect(parseFloat(user.marsExpect().toFixed(1))).toEqual(131.6);
+    expect(parseFloat(user.marsExpect().toFixed(1))).toEqual(37.2);
   });
   it('should calculate how many Jupiter years you are expected to have left', function() {
     const user = new CalculateAge(10, 80);
-    expect(parseFloat(user.jupiterExpect().toFixed(1))).toEqual(830.2);
+    expect(parseFloat(user.jupiterExpect().toFixed(1))).toEqual(5.9);
   });
 });
